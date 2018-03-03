@@ -42,6 +42,23 @@ app.post('/commands/starbot', (req, res) => {
   cmd.handler(payload, res)
 })
 
+app.post('/donate', (req, res) => {
+  // let data = {
+  //   response_type: 'in_channel', // public to the channel
+  //   text: '302: Found',
+  //   attachments: [{
+  //     image_url: 'https://http.cat/302.jpg'
+  //   }]
+  // };
+
+  let data = {
+    response_type: 'in_channel',
+    text: 'Thanks @' + res.user_name + ' for the donation!'
+  }
+
+  res.json(data);
+})
+
 app.listen(config('PORT'), (err) => {
   if (err) throw err
 
