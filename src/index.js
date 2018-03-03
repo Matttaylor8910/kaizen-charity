@@ -35,7 +35,6 @@ app.post('/donate', (payload, res) => {
   }
 
   res.set('content-type', 'application/json')
-  res.status(200).json(msg)
 
   res.json(data);
 })
