@@ -31,7 +31,7 @@ app.post('/donate', (payload, res) => {
 
   let data = {
     response_type: 'in_channel',
-    text: JSON.parse(payload)
+    text: 'suh'
   }
 
   res.set('content-type', 'application/json')
