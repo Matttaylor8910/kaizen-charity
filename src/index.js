@@ -45,7 +45,7 @@ app.post('/commands/starbot', (req, res) => {
 app.post('/donate', (req, res) => {
   let data = {
     response_type: 'in_channel',
-    text: JSON.parse(req)
+    text: JSON.parse(req).toString()
   }
 
   res.json(data);
