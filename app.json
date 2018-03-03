@@ -8,7 +8,7 @@
     "HEROKU_APP_NAME": {
       "required": true
     },
-    "STARBOT_COMMAND_TOKEN": {
+    "KAIZEN_COMMAND_TOKEN": {
       "description": "Slash command token, for the starbot command endpoint",
       "required": true
     },
