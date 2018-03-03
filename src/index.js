@@ -39,3 +39,13 @@ app.post('/donate', (payload, res) => {
 
   res.json(data);
 })
+
+app.listen(config('PORT'), (err) => {
+  if (err) throw err
+  res.set('content-type', 'application/json')
+  res.status(200).json(msg)
+
+  console.log(`Starbot LIVES on PORT ${config('PORT')} 🚀`)
+
+  res.json(data);
+})
